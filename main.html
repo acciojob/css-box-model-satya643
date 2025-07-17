@@ -1,114 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Perfect Box Model Clone</title>
-  <style>
-    body {
-      font-family: monospace;
-      background-color: white;
-      margin: 0;
-      padding: 0;
-    }
-
-    .outer-box {
-      border: 1px solid black;        /* OUTER BORDER */
-      margin: 20px;
-      display: inline-block;
-      position: relative;
-      padding: 20px;
-    }
-
-    .label-margin {
-      position: absolute;
-      top: -20px;
-      left: 20px;
-      font-size: 14px;
-      color: black;
-    }
-
-    .border-box {
-      border: 15px solid blue;
-      background-color: blue;
-      position: relative;
-      box-sizing: content-box;
-    }
-
-    .label-border {
-      position: absolute;
-      top: -18px;
-      left: 35px;
-      font-size: 14px;
-      color: blue;
-      font-weight: bold;
-    }
-
-    .padding-box {
-      background-color: lightblue;
-      padding: 50px;
-      position: relative;
-      box-sizing: content-box;
-    }
-
-    .label-padding {
-      position: absolute;
-      top: 10px;
-      left: 25px;
-      font-size: 14px;
-      color: black;
-    }
-
-    .label-color {
-      position: absolute;
-      top: 10px;
-      right: 25px;
-      font-size: 14px;
-      color: black;
-    }
-
-    .content-box {
-      width: 300px;
-      border: 1px dashed black;
-      padding: 10px;
-      color: black;
-      position: relative;
-      box-sizing: border-box;
-    }
-
-    .arrow-label {
-      text-align: center;
-      font-size: 14px;
-      margin-top: 8px;
-      color: black;
-    }
-
-    .arrow-label::before {
-      content: "⟵────────────── width 300px ───────────────⟶";
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Demo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <div class="outer-box">
-    <div class="label-margin">margin 20px</div>
-
-    <div class="border-box">
-      <div class="label-border">border 15px solid blue</div>
-
-      <div class="padding-box">
-        <div class="label-padding">padding 50px</div>
-        <div class="label-color">color lightblue</div>
-
-        <div class="content-box">
-          This is a demo of box model try to replicate<br />
-          this box model in Html and Css and try<br />
-          to pass all the test cases.
-        </div>
-
-        <div class="arrow-label"></div>
-      </div>
-    </div>
+  <div class="box">
+    This is a demo of box model, try to replicate this box model in Html &amp; Css and pass all the test cases.
   </div>
-
 </body>
 </html>
